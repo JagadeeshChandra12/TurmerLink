@@ -24,7 +24,6 @@ A comprehensive web application designed to empower turmeric farmers in Nizamaba
 ### Prerequisites
 - Node.js 16+ and npm
 - Supabase account (for database)
-- Twilio account (for SMS)
 - OpenWeatherMap API key (for weather)
 
 ### Installation
@@ -213,9 +212,6 @@ Ensure all required environment variables are set:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🆘 Support
 
