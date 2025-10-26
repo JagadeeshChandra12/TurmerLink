@@ -17,7 +17,6 @@ import {
 
 const SimpleRuralHomePage = ({ onNavigate, user, onLogout, onUpdateProfile }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isEditingProfile, setIsEditingProfile] = useState(false);
   const { language, changeLanguage } = useLanguage();
   
@@ -117,10 +116,6 @@ const SimpleRuralHomePage = ({ onNavigate, user, onLogout, onUpdateProfile }) =>
     }
   };
 
-  const handleEditProfile = () => {
-    onNavigate('profile'); // Navigate to dedicated profile page
-  };
-
   const handleSaveProfile = () => {
     setUserProfile({
       ...userProfile,
@@ -140,11 +135,6 @@ const SimpleRuralHomePage = ({ onNavigate, user, onLogout, onUpdateProfile }) =>
       district: userProfile.district,
       state: userProfile.state
     });
-  };
-
-  const handleLogout = () => {
-    setIsProfileOpen(false);
-    alert(language === 'te' ? 'లాగ్ అవుట్ చేయబడింది' : 'Logged out successfully');
   };
 
   const ProfileEditModal = () => (

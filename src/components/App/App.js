@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { LanguageProvider, useLanguage } from '../../contexts/LanguageContext';
+import { LanguageProvider } from '../../contexts/LanguageContext';
 import { SubmissionProvider } from '../../contexts/SubmissionContext';
 import ErrorBoundary from '../ErrorBoundary';
 import SimpleRuralHomePage from '../Layout/SimpleRuralHomePage';

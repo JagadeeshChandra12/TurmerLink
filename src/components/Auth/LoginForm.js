@@ -92,13 +92,6 @@ const LoginForm = ({ onLogin, onGovernmentLogin }) => {
     onLogin(userData);
   };
 
-  const handleBackToPhone = () => {
-    setStep('phone');
-    setPhoneNumber('');
-    setOtp('');
-    setError('');
-  };
-
   const handleBackToOtp = () => {
     setStep('otp');
     setOtp('');

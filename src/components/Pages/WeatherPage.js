@@ -36,10 +36,6 @@ const WeatherPage = ({ onBack }) => {
     }
   };
 
-  // OpenWeatherMap API key (you should replace this with your own free API key)
-  const API_KEY = 'your_openweathermap_api_key_here';
-  const API_URL = `https://api.openweathermap.org/data/2.5/weather`;
-
   const fetchWeatherData = async (location) => {
     try {
       setLoading(true);
@@ -99,6 +95,7 @@ const WeatherPage = ({ onBack }) => {
     }, 10 * 60 * 1000);
 
     return () => clearInterval(interval);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedLocation]);
 
   const getWeatherIcon = (weatherMain) => {
@@ -114,25 +111,6 @@ const WeatherPage = ({ onBack }) => {
       default:
         return <SunIcon className="h-16 w-16 text-yellow-500" />;
     }
-  };
-
-  const getWeatherColor = (weatherMain) => {
-    switch (weatherMain) {
-      case 'Clear':
-        return 'from-yellow-400 to-orange-500';
-      case 'Clouds':
-        return 'from-gray-400 to-gray-600';
-      case 'Rain':
-        return 'from-blue-400 to-blue-600';
-      case 'Thunderstorm':
-        return 'from-purple-400 to-purple-600';
-      default:
-        return 'from-yellow-400 to-orange-500';
-    }
-  };
-
-  const formatTime = (timestamp) => {
-    return new Date(timestamp * 1000).toLocaleTimeString();
   };
 
   const handleRefresh = () => {
