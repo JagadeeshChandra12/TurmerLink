@@ -12,7 +12,8 @@ import AnimatedPage from './AnimatedPage';
 const MSPPage = ({ onBack }) => {
   const [mspData, setMspData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const { language, changeLanguage } = useLanguage();
+  // eslint-disable-next-line no-unused-vars
+  const { language: _language, changeLanguage: _changeLanguage } = useLanguage();
 
   useEffect(() => {
     // Simulate loading
