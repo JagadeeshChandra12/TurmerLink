@@ -4,7 +4,6 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import { 
   AcademicCapIcon, 
   PlayIcon,
-  BookOpenIcon,
   QuestionMarkCircleIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';

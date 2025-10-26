@@ -13,7 +13,7 @@ import AnimatedPage from './AnimatedPage';
 const NotificationsPage = ({ onBack }) => {
   const [notifications, setNotifications] = useState([]);
   const [loading, setLoading] = useState(true);
-  const { language } = useLanguage();
+  const { language, changeLanguage } = useLanguage();
 
   useEffect(() => {
     // Simulate loading

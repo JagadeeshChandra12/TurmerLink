@@ -19,7 +19,7 @@ import AnimatedPage from './AnimatedPage';
 
 const MySalesPage = ({ onBack, user }) => {
   const [showAddForm, setShowAddForm] = useState(false);
-  const [showAnalytics, setShowAnalytics] = useState(false);
+  // const [showAnalytics, setShowAnalytics] = useState(false);
   const [showStockSubmission, setShowStockSubmission] = useState(false);
   const { language } = useLanguage();
   const { getFarmerSubmissions, addSubmission } = useSubmissions();

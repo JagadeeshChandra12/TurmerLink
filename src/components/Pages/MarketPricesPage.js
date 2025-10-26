@@ -5,8 +5,6 @@ import {
   CurrencyRupeeIcon,
   ArrowTrendingUpIcon,
   ArrowTrendingDownIcon,
-  SunIcon,
-  CloudIcon,
   ArrowPathIcon,
   ExclamationTriangleIcon,
   CreditCardIcon,
@@ -80,17 +78,17 @@ const MarketPricesPage = ({ onBack }) => {
     }
   };
 
-  // API endpoints for market prices
-  const API_ENDPOINTS = {
-    // Primary API - Agricultural Market Information System (AMIS)
-    amis: 'https://data.gov.in/api/datastore/resource.json',
-    
-    // Secondary API - Commodity prices
-    commodity: 'https://api.commodity.com/v1/prices',
-    
-    // Tertiary API - Market rates
-    market: 'https://api.marketrates.com/v1/turmeric'
-  };
+  // API endpoints for market prices (for future use)
+  // const API_ENDPOINTS = {
+  //   // Primary API - Agricultural Market Information System (AMIS)
+  //   amis: 'https://data.gov.in/api/datastore/resource.json',
+  //   
+  //   // Secondary API - Commodity prices
+  //   commodity: 'https://api.commodity.com/v1/prices',
+  //   
+  //   // Tertiary API - Market rates
+  //   market: 'https://api.marketrates.com/v1/turmeric'
+  // };
 
   const fetchMarketPrices = async () => {
     try {

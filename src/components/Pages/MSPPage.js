@@ -5,7 +5,6 @@ import {
   ShieldCheckIcon, 
   ArrowTrendingUpIcon,
   CheckCircleIcon,
-  ExclamationTriangleIcon,
   InformationCircleIcon
 } from '@heroicons/react/24/outline';
 import AnimatedPage from './AnimatedPage';
@@ -13,7 +12,7 @@ import AnimatedPage from './AnimatedPage';
 const MSPPage = ({ onBack }) => {
   const [mspData, setMspData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const { language } = useLanguage();
+  const { language, changeLanguage } = useLanguage();
 
   useEffect(() => {
     // Simulate loading
